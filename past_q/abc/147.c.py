@@ -29,7 +29,7 @@ def main():
 
     # 証人ごとに証言をdictで保存
     for witness_num in range(N):
-        for j in range(int(input())):
+        for _ in range(int(input())):
             target, is_honest = list(map(int, input().split()))
             testimony_dict[witness_num][target - 1] = is_honest
 
