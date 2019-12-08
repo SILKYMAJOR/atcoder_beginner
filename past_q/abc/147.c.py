@@ -40,7 +40,7 @@ def main():
         hypothesis = format(i, 'b').zfill(N)
         # 仮説が正しい場合のみ、正直者の数でmax_countを更新
         if is_hypothesis_correct(hypothesis, testimony_dict):
-            max_count = max(max_count, hypothesis.count(str("1")))
+            max_count = max(max_count, hypothesis.count("1"))
     print(max_count)
 
 
